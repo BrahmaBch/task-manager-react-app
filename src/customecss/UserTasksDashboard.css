@@ -1,0 +1,129 @@
+.tasks-dashboard {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.tasks-dashboard h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-task-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #45a049;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tasks-table th, .tasks-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tasks-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.tasks-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.tasks-table select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Align buttons side by side */
+.tasks-table .action-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Modal Overlay */
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1 !important; /* Ensure modal overlay is visible */
+}
+
+/* Modal Content */
+.ReactModal__Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Title */
+.ReactModal__Content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Close Button */
+.ReactModal__Content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ReactModal__Content button.close-button {
+  background-color: #6c757d;
+}
+
+/* Input Fields */
+.ReactModal__Content input[type="text"],
+.ReactModal__Content textarea,
+.ReactModal__Content input[type="date"],
+.ReactModal__Content select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Textarea */
+.ReactModal__Content textarea {
+  height: 100px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Error Message */
+.ReactModal__Content .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
